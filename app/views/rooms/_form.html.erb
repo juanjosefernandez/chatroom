@@ -10,12 +10,9 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field my-2">
-    <%= form.text_field :name, class: 'form-control', placeholder: "Enter a Room Name..." %>
+  <div class="form-group">
+    <%= form.text_field :name, class: 'form-control my-3', placeholder: "Room name..." %>
   </div>
 
-  <div class="actions">
-    <%= form.submit "Create New Room", class: "btn btn-primary btn-block" %>
-  </div>
+    <%= form.submit "Create New Room", class: "btn btn-outline-primary btn-block" %>
 <% end %>

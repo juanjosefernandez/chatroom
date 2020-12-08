@@ -1,7 +1,14 @@
+# chatroom
+
+chatroom is a simple, user friendly chat room done as an excercise that utilizes WebSockets to perform communication via Ruby on Rails’ ActionCable using Rails 6 and Ruby 2.7.
+
+## Installation
+
 ##### Prerequisites
 
-The setups steps expect following tools installed on the system.
+This installations expects the following to be installed on the system.
 
+- Git
 - Ruby [2.7.0](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
 - Rails [6.0.3.4](https://rubygems.org/gems/rails/versions/6.0.3.4)
 - [Redis](https://redis.io/)
@@ -14,7 +21,7 @@ git clone git@github.com:juanjosefernandez/chatroom.git
 
 ##### 2. Create and setup the database
 
-Run the following commands to create and setup the database.
+Once you are in the *chatroom* directory on your machine, run the following commands to create and setup the database.
 
 ```ruby
 bundle exec rake db:create

@@ -1,0 +1,12 @@
+<%# No longer in user because it has been split into _mine.html.erb and _theirs.html.erb %>
+<div class="message mb-3 <%= 'me' if message.user == current_user %>">
+    <div class="content-container">
+        <div class="content">
+            <%= message.content%>
+        </div>
+        <div class="author">
+            <%= message.user.username %>
+        </div>
+    </div>
+</div>
+<br>

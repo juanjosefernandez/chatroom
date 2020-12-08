@@ -28,8 +28,9 @@ class MessagesController < ApplicationController
 
     @message.user = current_user
     @message.save
-    redirect_to request.referrer
-    
+    # redirect_to request.referrer
+
+    SendMessageJob.perform_later(@message)    
   end
 
   # PATCH/PUT /messages/1

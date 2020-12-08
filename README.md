@@ -2,8 +2,8 @@
 
 The setups steps expect following tools installed on the system.
 
-- Ruby [ruby 2.7.0](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
-- Rails [Rails 6.0](https://rubygems.org/gems/rails/versions/6.0.3.4)
+- Ruby [2.7.0](https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/)
+- Rails [6.0.3.4](https://rubygems.org/gems/rails/versions/6.0.3.4)
 - [Redis](https://redis.io/)
 
 ##### 1. Check out the repository

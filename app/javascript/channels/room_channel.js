@@ -1,10 +1,13 @@
 import consumer from "./consumer"
 
 document.addEventListener("turbolinks:load", () => {
-  consumer.subscriptions.create({ channel: "RoomChannel", room_id: 4 }, {
+  const room_element = document.getElementById('room-id');
+  const room_id = Number(room_element.getAttribute('data-room-id'));
+
+  consumer.subscriptions.create({ channel: "RoomChannel", room_id: room_id }, {
     connected() {
       // Called when the subscription is ready for use on the server
-      console.log("Connected...");
+      console.log("Connected to " + room_id);
     },
   
     disconnected() {
@@ -16,8 +19,8 @@ document.addEventListener("turbolinks:load", () => {
       // Called when there's incoming data on the websocket for this channel
       console.log(data);
 
-      const element = document.getElementById('user-id');
-      const user_id = Number(element.getAttribute('data-user-id'));
+      const user_element = document.getElementById('user-id');
+      const user_id = Number(user_element.getAttribute('data-user-id'));
 
       let html;
 

@@ -56,6 +56,9 @@
             background-color: #eeeeee;
             border-radius: 20px;
         }
+        &.active{
+            background-color: yellow;
+        }
         .name{
             font-weight: bold;
             color: black;

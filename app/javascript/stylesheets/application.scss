@@ -42,3 +42,27 @@
         }
     }
 }
+.card{
+    border-radius: 20px;
+    border: none;
+}
+.room-link{
+    &:hover{
+        text-decoration: none;
+    }
+    .room-card{
+        transition: background-color 0.5s ease;
+        &:hover{
+            background-color: #eeeeee;
+            border-radius: 20px;
+        }
+        .name{
+            font-weight: bold;
+            color: black;
+        }
+        .member-count{
+            font-weight: light;
+            color: #777777;
+        }
+    }
+}

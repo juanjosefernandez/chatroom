@@ -4,9 +4,13 @@ document.addEventListener("turbolinks:load", () => {
   const room_element = document.getElementById('room-id');
   const room_id = Number(room_element.getAttribute('data-room-id'));
 
+  // removes all subscriptions so we can start anew when you enter a new room
+  consumer.subscriptions.subscriptions.forEach((subscription) => {
+    consumer.subscriptions.remove(subscription)
+  })
+
   consumer.subscriptions.create({ channel: "RoomChannel", room_id: room_id }, {
     connected() {
-      // Called when the subscription is ready for use on the server
       console.log("Connected to " + room_id);
     },
   

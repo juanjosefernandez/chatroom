@@ -37,3 +37,8 @@ bundle exec rails s
 ```
 
 And now you can visit the site with the URL http://localhost:3000
+
+## Usage
+
+To test this out locally on your computer, once you are live, visit http://localhost:3000 using any combination of different browsers and/or incognito windows. Create a couple of rooms and chat with yourself, real-time! Yay, websockets!
+
